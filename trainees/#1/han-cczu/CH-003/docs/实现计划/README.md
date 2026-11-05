@@ -16,7 +16,7 @@
 | [PR6](PR6-交付收尾.md) | `chore/delivery` | 自测说明、AI Coding 使用说明、前端按需引入、README 收尾 | PR5 | ✅ 已合并 #6 |
 | — | `chore/demo-data` | 演示数据生成与导入脚本（本地 / K8s） | PR6 | ✅ 已合并 #7 |
 | [前端体验重构](前端体验重构.md) | `codex/frontend-refresh` | 导航、课程工作流和管理界面 | PR6 | ✅ 已合并 #11 |
-| [CH-003 训练提交](PR-CH003-训练提交.md) | `trainee/han-cczu/CH-003` | 批次 #1 作品整理、训练信息、自测复验与 Fork PR 材料 | 现有项目 | ✅ 本地准备完成；待推送及上游 PR |
+| [CH-003 训练提交](PR-CH003-训练提交.md) | `trainee/han-cczu/CH-003` | 批次 #1 作品整理、训练信息、自测复验与 Fork PR 材料 | 现有项目 | ✅ 已提交[训练 PR #1](https://github.com/bluedot-ai/devstart-labs/pull/1)，等待 Review |
 
 生产部署（技术设计 §9、[部署手册](../部署手册.md)）的清单和脚本已在 PR1 中完成。2026-11-04 已用 `deploy.ps1`（方式 B）把 `e8c05d3` 发布到服务器，地址 <http://101.96.237.10:30080>。
 

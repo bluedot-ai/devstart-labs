@@ -7,6 +7,7 @@
 | Challenge | `CH-003` · 培训课程管理系统 · Version `1.0` |
 | 本地分支 | `trainee/han-cczu/CH-003` |
 | Fork / 目标仓库 | `han-cczu/devstart-labs` / `bluedot-ai/devstart-labs:main` |
+| 训练 PR | [#1：CH-003 培训课程管理系统](https://github.com/bluedot-ai/devstart-labs/pull/1)，等待 Review |
 | 作品目录 | `trainees/#1/han-cczu/CH-003/` |
 | 源码快照 | `han-cczu/TrainingCourseManagementSystem` 的 `ed4ea92fbf816089014dfb36dc6c8a854801d569` |
 
@@ -26,14 +27,14 @@
 - [x] 验证 Compose 配置可解析。
 - [x] 检查最终暂存范围、凭据风险、Maven Wrapper 可执行位与文档链接。
 - [x] 完成本地提交内容和 PR 模板材料。
-- [ ] 推送 Fork 的训练分支，并向上游 `main` 创建 PR。
+- [x] 推送 Fork 的训练分支，并向上游 `main` 创建 [PR #1](https://github.com/bluedot-ai/devstart-labs/pull/1)。
 - [ ] 逐条响应 Review，获得 Reviewer Approve，由维护者合并。
 
 ## 本次验证（2026-11-05）
 
 验证使用从上述 Git 提交导出的相同源码，执行目录为本作品的项目根目录。业务源码和构建配置未修改；本次新增和调整的是训练交付文档。
 
-最终暂存 210 个文件，全部位于个人作品目录；核对了原快照的 209 个文件，仅训练交付文档有内容调整，`backend/mvnw.cmd` 按 `.gitattributes` 规范化换行。37 个相对文档链接存在，`backend/mvnw` 保留 `100755` 可执行位；未发现禁止文件或常见真实凭据格式。PR 模板材料已在本地准备，尚未推送或创建上游 PR。
+最终暂存 210 个文件，全部位于个人作品目录；核对了原快照的 209 个文件，仅训练交付文档有内容调整，`backend/mvnw.cmd` 按 `.gitattributes` 规范化换行。37 个相对文档链接存在，`backend/mvnw` 保留 `100755` 可执行位；未发现禁止文件或常见真实凭据格式。2026-11-05 已推送 Fork 分支并按模板创建上游 [PR #1](https://github.com/bluedot-ai/devstart-labs/pull/1)，等待导师 Review。
 
 | 检查 | 命令 | 结果 |
 |---|---|---|
@@ -53,4 +54,4 @@
 
 ## PR 完成标准
 
-本地准备完成后，提交 `feat(CH-003): 提交培训课程管理系统训练作品`。PR 标题为 `CH-003: 培训课程管理系统（Version 1.0）`，填写上游 PR 模板，设计、测试、部署和 AI 使用说明均链接至本作品目录。最终合入以导师 Review 和上游维护者操作为准；本地检查通过不代表已经提交或验收。
+已提交 `3f32bf6`（`feat(CH-003): 提交培训课程管理系统训练作品`），并创建标题为 `CH-003: 培训课程管理系统（Version 1.0）` 的上游 [PR #1](https://github.com/bluedot-ai/devstart-labs/pull/1)。PR 已填写上游模板，设计、测试、部署和 AI 使用说明均链接至本作品目录。最终合入以导师 Review 和上游维护者操作为准；PR 已创建不代表已经验收。
