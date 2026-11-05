@@ -1,0 +1,38 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: customer-tracker-mysql-pv
+  labels:
+    app.kubernetes.io/name: customer-issue-tracker
+    app.kubernetes.io/component: mysql
+spec:
+  capacity:
+    storage: 10Gi
+  accessModes:
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Retain
+  storageClassName: customer-tracker-local
+  hostPath:
+    path: /var/lib/customer-issue-tracker/mysql
+    type: DirectoryOrCreate
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - matchExpressions:
+            - key: kubernetes.io/hostname
+              operator: In
+              values:
+                - k8s-worker
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: mysql-data
+  namespace: customer-tracker
+spec:
+  accessModes:
+    - ReadWriteOnce
+  storageClassName: customer-tracker-local
+  resources:
+    requests:
+      storage: 10Gi
